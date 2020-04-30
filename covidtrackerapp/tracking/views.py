@@ -19,7 +19,7 @@ def index(request):
         row = [i.text for i in td]
         table_list.append(row)
     del table_list[1]
-    table_list = table_list[:-3]
+    table_list = table_list[:-4]
     context = {"table_list": table_list}
 
     return render(request, 'index.html', context)
